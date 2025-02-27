@@ -1,0 +1,7 @@
+<div style="height: 230px;border-style: solid;overflow-y: scroll;">
+    <h2>Live-Updates Component</h2>
+    <button style="display: none;" (click)="CloseConnection()">Close Websocket Connection</button>
+    <button style="display: none;" (click)="OpenConnection()">Open Websocket Connection</button>
+    <div *ngFor="let currentMessage of GetMessage()">
+      {{ currentMessage}}
+    </div>
